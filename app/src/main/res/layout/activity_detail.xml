@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:background="@android:color/holo_green_dark">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="รายละเอียดข้อมูลระยะสับปะรด  "
+            android:layout_span="3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_light"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp" />
+
+    </TableRow>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="#82ffffff">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ระยะที่"
+                    android:id="@+id/textView1"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_light"
+                    />
+
+                <TextView
+                    android:id="@+id/txtShowDistanceID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="DistanceID"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="80dp"
+                    android:textColor="@android:color/background_dark"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ปี "
+                    android:id="@+id/textView2"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_light"
+                    />
+
+                <TextView
+                    android:id="@+id/txtShowYear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Year"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="80dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ปลูกใหม่ "
+                    android:id="@+id/textView3"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_light"
+                    />
+
+                <TextView
+                    android:id="@+id/txtShowNew"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="New"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView21"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ออกราก1"
+                    android:id="@+id/textView4"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_light"
+                    />
+
+                <TextView
+                    android:id="@+id/txtShowRoot1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Root1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView22"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ออกราก2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView5"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/txtShowRoot2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Root2"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView23"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="บำรุงต้น1"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView6"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowCare1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Care1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView24"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="บำรุงต้น2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView7"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1"
+                     />
+
+                <TextView
+                    android:id="@+id/txtShowCare2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Care2"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView25"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="เตรียมต้น"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView8"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowReady"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ready"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView26"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="แก๊ส2"
+                    android:id="@+id/textView9"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowGas1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gas1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView27"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="แก๊ส2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView10"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowGas2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gas2"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView28"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="35 วัน"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView11"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowDay35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day35"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView29"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="45 วัน"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView12"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/txtShowDay45"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day45"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView31"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="60 วัน"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView13"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/txtShowDay60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day60"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView32"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="75 วัน"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView14"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowDay75"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day75"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView33"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="85 วัน"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView15"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowDay85"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day85"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView34"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="100 วัน"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView16"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowDay100"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day100"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView35"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="120 วัน"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView17"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowDay120"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day120"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView36"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_light"
+                    android:text="135 วัน"
+                    android:id="@+id/textView18"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowDay135"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day135"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView37"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="150 วัน"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView19"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowDay150"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day150"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView38"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ต้นตาย"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView20"
+                    android:textSize="@dimen/h2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtShowDie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Die"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ต้น"
+                    android:textSize="@dimen/h2"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/textView39"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
