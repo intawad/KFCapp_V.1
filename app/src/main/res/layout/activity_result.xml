@@ -213,7 +213,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="แก๊ส2"
+                    android:text="แก๊ส1"
                     android:id="@+id/textView9"
                     android:textColor="@android:color/background_light"
                     android:textSize="@dimen/h2"
